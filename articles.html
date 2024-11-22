@@ -102,9 +102,10 @@
 								<a class="image main"><img src="GOUP-BY-SQL.png" alt="" /></a>
 									<p> In SQL, when you use GROUP BY, all NULL values in a column are grouped together, as if they were one 
 									single value. This can be surprising because, outside of GROUP BY, SQL treats NULL as an unknown, meaning
-									 that NULL = NULL is false! Here's an example:
-									 SELECT department, COUNT(*) FROM employees GROUPBY department;
-									 If some department values are NULL, SQL groups all those NULL entries together. 
+									 that NULL = NULL is false! 
+									 <p>Here's an example:
+									 <p>SELECT department, COUNT(*) <p>FROM employees <p>GROUPBY department;
+									 <p>If some department values are NULL, SQL groups all those NULL entries together. 
 									 This is helpful for aggregation, but it can also lead to unexpected results if you're not aware of it. 
 									 This behavior is unique to GROUP BY and highlights SQL’s different handling of NULL depending on context. 
 									 So next time you’re aggregating, don’t forget to consider those NULLs!.</p>				
